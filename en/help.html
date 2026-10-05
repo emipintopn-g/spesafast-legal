@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Help — SpesaFast</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600&family=Source+Sans+3:wght@400;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <span class="mark">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="9" cy="20" r="1.4" fill="#fff" stroke="none"/>
+          <circle cx="17" cy="20" r="1.4" fill="#fff" stroke="none"/>
+          <path d="M3 4h2l2.2 11.2a1.8 1.8 0 0 0 1.8 1.5h8a1.8 1.8 0 0 0 1.77-1.48L20 8H6.2"/>
+        </svg>
+      </span>
+      SpesaFast
+    </a>
+    <nav class="jump">
+      <a href="help.html" aria-current="page">Help</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Service</a>
+      <a href="../help.html" lang="it">IT</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <div class="masthead">
+    <span class="eyebrow">User guide</span>
+    <h1>SpesaFast help</h1>
+    <p>How the app is organized, how to set up a supermarket with its shelves, and how to optionally connect an AI engine for automatic product classification.</p>
+    <div class="meta">
+      <span class="chip">Last updated: October 5, 2026</span>
+      <span class="chip">Contact: emi.pinto.pn@gmail.com</span>
+    </div>
+  </div>
+
+  <article class="clause">
+    <h3><span class="n">1</span> What is SpesaFast</h3>
+    <p>SpesaFast is an Android app built to speed up grocery shopping. It works in three steps: you keep your <strong>shopping lists</strong>, you draw the <strong>map</strong> of one or more supermarkets with the shelves and product categories they hold, and when you go shopping the app computes an <strong>ordered route</strong> that visits every needed shelf once, in the shortest order.</p>
+    <p>Products added to a list are automatically classified into the right category (e.g. "Dairy", "Produce") by a built-in dictionary that learns from your corrections; optionally, this dictionary can be backed up by an AI engine for products it doesn't recognize (see section 4).</p>
+    <p>All data — lists, supermarkets, categories — stays saved on your phone. An optional Google Drive backup lets you keep or move it to another device (see the <a href="privacy.html">privacy policy</a>).</p>
+  </article>
+
+  <article class="clause">
+    <h3><span class="n">2</span> The app's sections</h3>
+    <p>The app is organized into five tabs at the bottom:</p>
+  </article>
+
+  <article class="clause">
+    <h3><span class="n">2.1</span> 🛒 Shopping</h3>
+    <p>The home screen. You pick the list and the supermarket to use, then tap "Start shopping" to begin the route. During the trip, a mini-map at the top shows where you are and which shelf to reach next; products are checked off as "picked" one by one. If a trip is already in progress, this tab shows a banner to resume or finish it; the tab's icon changes to flag it.</p>
+  </article>
+
+  <article class="clause">
+    <h3><span class="n">2.2</span> 📋 Lists</h3>
+    <p>The list of shopping lists. You create a list, give it a name, and add products: as you type a name, the app suggests products already used in the past and assigns them to the right category automatically. From here you can also start a shopping trip directly for a given list.</p>
+    <p>Besides typing products one by one, two shortcuts are available inside a list:</p>
+    <ul>
+      <li><strong>🎤 Dictation:</strong> speak the list of products out loud (e.g. "milk, bread, tomatoes") and the app recognizes them individually.</li>
+      <li><strong>📷 Import from photo:</strong> take a photo or choose an existing image (e.g. a handwritten list or one photographed on a piece of paper), and the app reads its text to extract the products.</li>
+    </ul>
+    <p>In both cases the recognized products are shown in a review list, where you can deselect the ones you don't want before confirming: nothing is added automatically without confirmation. Both features require at least one <a href="help.html#ai">AI engine</a> (section 4) to be configured, since it's needed to interpret the spoken phrase or the text read from the photo.</p>
+  </article>
+
+  <article class="clause">
+    <h3><span class="n">2.3</span> 🏬 Supermarkets</h3>
+    <p>The list of saved supermarkets. Tapping a supermarket opens its page with three buttons: <strong>Edit</strong> (name and address), <strong>Shelves</strong> (the list of shelves and the categories they hold) and <strong>Map</strong> (the physical layout of the shelves on the store's floor plan). The full walkthrough is in section 3.</p>
+  </article>
+
+  <article class="clause">
+    <h3><span class="n">2.4</span> 🏷️ Categories</h3>
+    <p>The tree of product categories used by the app (e.g. the "Dairy" macro-category with sub-categories like "Milk", "Cheese", etc.). You can create new categories, rename them, and change their icon or color. These are the same categories you assign to a supermarket's shelves.</p>
+  </article>
+
+  <article class="clause">
+    <h3><span class="n">2.5</span> 🛠️ Tools</h3>
+    <p>A settings and tools page, split into blocks:</p>
+    <ul>
+      <li><strong>Backup and tools:</strong> export/import all your data to a file (to keep it or move it manually) and browse the classification dictionary.</li>
+      <li><strong>Google Drive backup:</strong> optional sign-in with a Google account to save and restore a full backup (see the <a href="privacy.html">privacy policy</a>).</li>
+      <li><strong>Language and theme:</strong> Italian/English and light/dark/automatic.</li>
+      <li><strong>AI classification:</strong> where you optionally connect the AI engines used to help classify products the built-in dictionary doesn't recognize (see section 4).</li>
+    </ul>
+  </article>
+
+  <article class="clause">
+    <h3><span class="n">3</span> Setting up a supermarket with its shelves</h3>
+    <p>To get a useful route, a supermarket only needs to be set up once: you create it, define its shelves with the categories they hold, then (optional but recommended) arrange them on the map.</p>
+  </article>
+
+  <article class="clause">
+    <h3><span class="n">3.1</span> Create the supermarket</h3>
+    <p>In the <strong>Supermarkets</strong> tab, tap the <strong>＋</strong> button at the bottom and give the store a name (e.g. "Main Street Supermarket"). Address and notes are optional and can be added later from "Edit".</p>
+  </article>
+
+  <article class="clause">
+    <h3><span class="n">3.2</span> Add shelves and assign categories</h3>
+    <p>Open the supermarket and tap <strong>Shelves</strong>. Use <strong>＋</strong> to add a shelf (e.g. "Dairy", "Frozen", "Checkout"): the name is free text, it only needs to help you recognize it on the map.</p>
+    <p>For each shelf, tap its <strong>categories</strong>: choose one or more product categories from those defined in the Categories tab (e.g. the "Dairy" shelf will hold the categories "Milk", "Cheese", "Yogurt"). When a product from one of those categories is on a list, the app will know it's on that shelf.</p>
+    <p>A shelf can also hold different categories on each of its four sides (Top/Right/Bottom/Left), useful for a double-sided shelf accessible from different aisles; for most cases it's enough to assign categories to the "Whole" side.</p>
+  </article>
+
+  <article class="clause">
+    <h3><span class="n">3.3</span> Arrange the shelves on the map</h3>
+    <p>From the supermarket's page, tap <strong>Map</strong>. Here you see a grid representing the store's floor plan: tapping an empty cell places an unplaced shelf there (or use "Auto-arrange" to place them all automatically as a starting point). Tapping an already-placed shelf shows the commands to <strong>move</strong>, <strong>resize</strong> or <strong>edit</strong> it (rename it, change its categories, remove it from the map). The 🔍−/🔍+ buttons control zoom; Col±/Row± change the grid size.</p>
+    <p>For the app to compute a realistic route, also place the two special markers using the 🚪 (entrance) and 💳 (checkout) buttons — once is enough, in the correct position relative to the shelves.</p>
+    <p>The map is optional: without it the app still proposes an order to visit the shelves, it just won't draw a step-by-step route on the floor plan.</p>
+  </article>
+
+  <article class="clause">
+    <h3><span class="n">3.4</span> Check the result</h3>
+    <p>To check everything is set up correctly, go to the <strong>Shopping</strong> tab, pick a test list and the supermarket you just configured, then start the trip: the mini-map at the top should show a route connecting the right shelves in the right order.</p>
+  </article>
+
+  <article class="clause" id="ai">
+    <h3><span class="n">4</span> Connecting an AI engine (optional)</h3>
+    <p>The app's built-in dictionary recognizes most common products on its own and learns from corrections. For products it doesn't recognize, you can connect — free of charge — one or more external AI engines that suggest the right category. This isn't required to use the app: it's an extra aid.</p>
+    <p>They're configured from the <strong>Tools → AI classification</strong> tab, by entering an "API key" (a string of characters that identifies your account with the service) in the relevant field and tapping <strong>Save</strong>. The <strong>Test</strong> button immediately checks that the key works. If more than one engine is configured, the app tries them in the order Aigway → Gemini → Groq, moving to the next one only if the previous one is unavailable or finds no category.</p>
+  </article>
+
+  <article class="clause">
+    <h3><span class="n">4.1</span> Generate a Gemini (Google AI) API key</h3>
+    <ol>
+      <li>Open <strong>aistudio.google.com/app/apikey</strong> from your phone's or computer's browser.</li>
+      <li>Sign in with a Google account (the same one or a different one — it's not tied to the account used for the Drive backup).</li>
+      <li>Tap <strong>Create API key</strong>, choosing or creating a project if asked.</li>
+      <li>Copy the generated key (a string starting with <code>AIza…</code>).</li>
+      <li>In SpesaFast: <strong>Tools → AI classification → Gemini → API key</strong>, paste it and tap <strong>Save</strong>, then <strong>Test</strong> to verify.</li>
+    </ol>
+    <p>Gemini's free tier has a daily request limit more than enough for personal use of the app, and it doesn't require a credit card.</p>
+  </article>
+
+  <article class="clause">
+    <h3><span class="n">4.2</span> Generate a Groq API key</h3>
+    <ol>
+      <li>Open <strong>console.groq.com</strong> in your browser and create a free account (or sign in with an existing Google/GitHub account).</li>
+      <li>In the side menu, open <strong>API Keys</strong>.</li>
+      <li>Tap <strong>Create API Key</strong>, give the key any name you like (e.g. "SpesaFast") and confirm it.</li>
+      <li>Copy the key shown right away: Groq only displays it in full once.</li>
+      <li>In SpesaFast: <strong>Tools → AI classification → Groq → API key</strong>, paste it and tap <strong>Save</strong>, then <strong>Test</strong> to verify.</li>
+    </ol>
+    <p>Groq's free tier doesn't require a credit card and allows a number of daily requests more than enough for personal use of the app.</p>
+  </article>
+
+  <div class="callout">
+    <p><strong>Note:</strong> the API keys you enter are only stored on your phone (the system's secure storage) and are used exclusively to send the product name to the chosen service, as described in the <a href="privacy.html">privacy policy</a>. You can remove them at any time with the "Clear" button next to each engine.</p>
+  </div>
+
+  <footer class="page">
+    <p>SpesaFast · see also the <a href="privacy.html">privacy policy</a> and the <a href="terms.html">terms of service</a>.</p>
+  </footer>
+
+</main>
+</body>
+</html>

@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Guida — SpesaFast</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600&family=Source+Sans+3:wght@400;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <span class="mark">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="9" cy="20" r="1.4" fill="#fff" stroke="none"/>
+          <circle cx="17" cy="20" r="1.4" fill="#fff" stroke="none"/>
+          <path d="M3 4h2l2.2 11.2a1.8 1.8 0 0 0 1.8 1.5h8a1.8 1.8 0 0 0 1.77-1.48L20 8H6.2"/>
+        </svg>
+      </span>
+      SpesaFast
+    </a>
+    <nav class="jump">
+      <a href="help.html" aria-current="page">Guida</a>
+      <a href="privacy.html">Informativa privacy</a>
+      <a href="terms.html">Termini di servizio</a>
+      <a href="en/help.html" lang="en">EN</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <div class="masthead">
+    <span class="eyebrow">Guida all'uso</span>
+    <h1>Guida a SpesaFast</h1>
+    <p>Come è organizzata l'app, come configurare un supermercato con i suoi scaffali e come collegare, in modo facoltativo, un motore di intelligenza artificiale per la classificazione automatica dei prodotti.</p>
+    <div class="meta">
+      <span class="chip">Ultimo aggiornamento: 5 ottobre 2026</span>
+      <span class="chip">Contatto: emi.pinto.pn@gmail.com</span>
+    </div>
+  </div>
+
+  <article class="clause">
+    <h3><span class="n">1</span> Cos'è SpesaFast</h3>
+    <p>SpesaFast è un'app Android pensata per velocizzare la spesa al supermercato. Si usa in tre passaggi: si tengono le proprie <strong>liste della spesa</strong>, si disegna la <strong>mappa</strong> di uno o più supermercati con gli scaffali e le categorie di prodotto che contengono, e quando si va a fare la spesa l'app calcola un <strong>percorso ordinato</strong> che permette di passare una sola volta da ogni scaffale necessario, nell'ordine più breve.</p>
+    <p>I prodotti aggiunti a una lista vengono classificati automaticamente nella categoria giusta (es. "Latticini", "Ortofrutta") da un dizionario interno che impara dalle correzioni dell'utente; facoltativamente, questo dizionario può essere affiancato da un motore di intelligenza artificiale per i prodotti che non riconosce (vedi la sezione 4).</p>
+    <p>Tutti i dati — liste, supermercati, categorie — restano salvati sul telefono. Un backup facoltativo su Google Drive permette di conservarli o spostarli su un altro dispositivo (vedi l'<a href="privacy.html">informativa sulla privacy</a>).</p>
+  </article>
+
+  <article class="clause">
+    <h3><span class="n">2</span> Le sezioni dell'app</h3>
+    <p>L'app è organizzata in cinque schede, in basso:</p>
+  </article>
+
+  <article class="clause">
+    <h3><span class="n">2.1</span> 🛒 Spesa</h3>
+    <p>La schermata iniziale. Si scelgono la lista e il supermercato da usare, poi si tocca "Inizia la spesa" per avviare il percorso. Durante la spesa, una mini-mappa in alto mostra dove ci si trova e quale scaffale raggiungere; i prodotti vengono spuntati come "presi" uno a uno. Se una spesa è già in corso, questa scheda mostra un banner per riprenderla o concluderla; l'icona della scheda cambia per segnalarlo.</p>
+  </article>
+
+  <article class="clause">
+    <h3><span class="n">2.2</span> 📋 Liste</h3>
+    <p>Elenco delle liste della spesa. Si crea una lista, le si danno un nome e si aggiungono i prodotti: digitando il nome, l'app suggerisce prodotti già usati in passato e li assegna automaticamente alla categoria corretta. Da qui si può anche avviare direttamente la spesa per una lista specifica.</p>
+    <p>Oltre a digitare i prodotti uno a uno, dentro una lista sono disponibili due scorciatoie:</p>
+    <ul>
+      <li><strong>🎤 Dettatura:</strong> si pronuncia a voce l'elenco dei prodotti (es. "latte, pane, pomodori") e l'app li riconosce singolarmente.</li>
+      <li><strong>📷 Importa da foto:</strong> si scatta una foto o si scegli un'immagine già salvata (es. una lista scritta a mano o fotografata su un foglio) e l'app ne legge il testo per estrarne i prodotti.</li>
+    </ul>
+    <p>In entrambi i casi i prodotti riconosciuti vengono mostrati in un elenco di revisione, dove si può deselezionare quelli non voluti prima di confermarli: nessun prodotto viene aggiunto automaticamente senza conferma. Queste due funzioni richiedono che sia configurato almeno un motore di <a href="help.html#ai">intelligenza artificiale</a> (sezione 4), perché serve a interpretare la frase pronunciata o il testo letto nella foto.</p>
+  </article>
+
+  <article class="clause">
+    <h3><span class="n">2.3</span> 🏬 Supermercati</h3>
+    <p>Elenco dei supermercati salvati. Toccando un supermercato si apre la sua pagina con tre pulsanti: <strong>Modifica</strong> (nome e indirizzo), <strong>Scaffali</strong> (elenco degli scaffali e delle categorie che contengono) e <strong>Mappa</strong> (disposizione fisica degli scaffali sulla pianta del negozio). La guida completa è nella sezione 3.</p>
+  </article>
+
+  <article class="clause">
+    <h3><span class="n">2.4</span> 🏷️ Categorie</h3>
+    <p>L'albero delle categorie di prodotto usate dall'app (es. macro-categoria "Latticini" con le sotto-categorie "Latte", "Formaggi", ecc.). Si possono creare nuove categorie, rinominarle, cambiarne l'icona o il colore. Sono le stesse categorie che si assegnano agli scaffali di un supermercato.</p>
+  </article>
+
+  <article class="clause">
+    <h3><span class="n">2.5</span> 🛠️ Utilità</h3>
+    <p>Pagina di impostazioni e strumenti, divisa in blocchi:</p>
+    <ul>
+      <li><strong>Backup e strumenti:</strong> esporta/importa tutti i dati in un file (per conservarli o spostarli manualmente) e consulta il dizionario di classificazione.</li>
+      <li><strong>Backup su Google Drive:</strong> accesso facoltativo con un account Google per salvare e ripristinare un backup completo (vedi l'<a href="privacy.html">informativa sulla privacy</a>).</li>
+      <li><strong>Lingua e tema:</strong> italiano/inglese e chiaro/scuro/automatico.</li>
+      <li><strong>Classificazione AI:</strong> dove si collegano, in modo facoltativo, i motori di intelligenza artificiale usati come aiuto per classificare i prodotti che il dizionario interno non riconosce (vedi la sezione 4).</li>
+    </ul>
+  </article>
+
+  <article class="clause">
+    <h3><span class="n">3</span> Configurare un supermercato con i suoi scaffali</h3>
+    <p>Per ottenere un percorso utile, un supermercato va impostato una sola volta: si crea, si definiscono gli scaffali con le categorie che contengono, poi (facoltativo ma consigliato) si dispongono sulla mappa.</p>
+  </article>
+
+  <article class="clause">
+    <h3><span class="n">3.1</span> Creare il supermercato</h3>
+    <p>Nella scheda <strong>Supermercati</strong>, tocca il pulsante <strong>＋</strong> in basso e dai un nome al negozio (es. "Esselunga Via Roma"). Indirizzo e note sono facoltativi e si inseriscono poi da "Modifica".</p>
+  </article>
+
+  <article class="clause">
+    <h3><span class="n">3.2</span> Aggiungere gli scaffali e assegnare le categorie</h3>
+    <p>Apri il supermercato e tocca <strong>Scaffali</strong>. Con <strong>＋</strong> si aggiunge uno scaffale (es. "Latticini", "Surgelati", "Casse"): il nome è libero, serve solo a riconoscerlo sulla mappa.</p>
+    <p>Per ogni scaffale si toccano le sue <strong>categorie</strong>: si scelgono una o più categorie di prodotto tra quelle definite nella scheda Categorie (es. lo scaffale "Latticini" conterrà le categorie "Latte", "Formaggi", "Yogurt"). Quando un prodotto di una di quelle categorie è in lista, l'app saprà che si trova su quello scaffale.</p>
+    <p>Uno scaffale può anche avere categorie diverse sui suoi quattro lati (Alto/Destra/Basso/Sinistra), utile per uno scaffale a doppia faccia accessibile da corsie diverse; per la maggior parte dei casi basta assegnare le categorie al lato "Tutto".</p>
+  </article>
+
+  <article class="clause">
+    <h3><span class="n">3.3</span> Disporre gli scaffali sulla mappa</h3>
+    <p>Dalla pagina del supermercato tocca <strong>Mappa</strong>. Qui si vede una griglia che rappresenta la pianta del negozio: toccando una cella vuota si piazza lì uno scaffale non ancora posizionato (o si usa "Auto-disponi" per sistemarli tutti in automatico come punto di partenza). Toccando uno scaffale già piazzato compaiono i comandi per <strong>spostarlo</strong>, <strong>ridimensionarlo</strong> o <strong>modificarlo</strong> (rinominarlo, cambiarne le categorie, rimuoverlo dalla mappa). I pulsanti 🔍−/🔍+ regolano lo zoom; Col±/Riga± cambiano le dimensioni della griglia.</p>
+    <p>Per far calcolare all'app un percorso realistico, posiziona anche i due riferimenti speciali con i pulsanti 🚪 (ingresso) e 💳 (casse) — bastano una volta, nella posizione corretta rispetto agli scaffali.</p>
+    <p>La mappa è facoltativa: senza di essa l'app propone comunque un ordine di visita degli scaffali, semplicemente senza disegnare un percorso passo-passo sulla pianta.</p>
+  </article>
+
+  <article class="clause">
+    <h3><span class="n">3.4</span> Verificare il risultato</h3>
+    <p>Per controllare che tutto sia impostato correttamente, vai nella scheda <strong>Spesa</strong>, scegli una lista di prova e il supermercato appena configurato, poi avvia la spesa: la mini-mappa in alto deve mostrare un percorso che collega gli scaffali giusti nell'ordine giusto.</p>
+  </article>
+
+  <article class="clause" id="ai">
+    <h3><span class="n">4</span> Collegare un motore di intelligenza artificiale (facoltativo)</h3>
+    <p>Il dizionario interno dell'app riconosce da solo la maggior parte dei prodotti comuni e impara dalle correzioni. Per i prodotti che non riconosce, si può collegare — gratuitamente — uno o più motori di intelligenza artificiale esterni che suggeriscono la categoria giusta. Non è necessario per usare l'app: è un aiuto in più.</p>
+    <p>Si configurano dalla scheda <strong>Utilità → Classificazione AI</strong>, inserendo una "chiave API" (una stringa di caratteri che identifica il proprio account sul servizio) nell'apposito campo e toccando <strong>Salva</strong>. Il pulsante <strong>Test</strong> verifica subito che la chiave funzioni. Se è configurato più di un motore, l'app li prova nell'ordine Aigway → Gemini → Groq, passando al successivo solo se il precedente non è disponibile o non trova una categoria.</p>
+  </article>
+
+  <article class="clause">
+    <h3><span class="n">4.1</span> Generare una chiave API Gemini (Google AI)</h3>
+    <ol>
+      <li>Apri <strong>aistudio.google.com/app/apikey</strong> dal browser del telefono o del computer.</li>
+      <li>Accedi con un account Google (lo stesso o un altro, non è legato all'account usato per il backup su Drive).</li>
+      <li>Tocca <strong>Create API key</strong> (o "Crea chiave API"), scegli o crea un progetto quando richiesto.</li>
+      <li>Copia la chiave generata (una stringa che inizia con <code>AIza…</code>).</li>
+      <li>In SpesaFast: <strong>Utilità → Classificazione AI → Gemini → Chiave API</strong>, incollala e tocca <strong>Salva</strong>, poi <strong>Test</strong> per verificare.</li>
+    </ol>
+    <p>Il livello gratuito di Gemini ha un limite di richieste giornaliere più che sufficiente per l'uso personale dell'app; non richiede una carta di credito.</p>
+  </article>
+
+  <article class="clause">
+    <h3><span class="n">4.2</span> Generare una chiave API Groq</h3>
+    <ol>
+      <li>Apri <strong>console.groq.com</strong> dal browser e crea un account gratuito (o accedi con un account Google/GitHub già esistente).</li>
+      <li>Nel menu laterale apri <strong>API Keys</strong>.</li>
+      <li>Tocca <strong>Create API Key</strong>, dai un nome a piacere alla chiave (es. "SpesaFast") e confermala.</li>
+      <li>Copia subito la chiave mostrata: Groq la mostra per intero una sola volta.</li>
+      <li>In SpesaFast: <strong>Utilità → Classificazione AI → Groq → Chiave API</strong>, incollala e tocca <strong>Salva</strong>, poi <strong>Test</strong> per verificare.</li>
+    </ol>
+    <p>Il livello gratuito di Groq non richiede una carta di credito e consente un numero di richieste giornaliere ampiamente sufficiente per l'uso personale dell'app.</p>
+  </article>
+
+  <div class="callout">
+    <p><strong>Nota:</strong> le chiavi API inserite restano salvate solo sul telefono (archivio sicuro del sistema) e vengono usate esclusivamente per inviare il nome del prodotto al servizio scelto, come descritto nell'<a href="privacy.html">informativa sulla privacy</a>. Si possono rimuovere in qualsiasi momento con il pulsante "Rimuovi" accanto a ciascun motore.</p>
+  </div>
+
+  <footer class="page">
+    <p>SpesaFast · vedi anche l'<a href="privacy.html">informativa sulla privacy</a> e i <a href="terms.html">termini di servizio</a>.</p>
+  </footer>
+
+</main>
+</body>
+</html>

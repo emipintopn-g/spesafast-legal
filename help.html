@@ -39,7 +39,7 @@
     <h1>Guida a SpesaFast</h1>
     <p>Come è organizzata l'app, come configurare un supermercato con i suoi scaffali e come collegare, in modo facoltativo, un motore di intelligenza artificiale per la classificazione automatica dei prodotti.</p>
     <div class="meta">
-      <span class="chip">Ultimo aggiornamento: 5 ottobre 2026</span>
+      <span class="chip">Ultimo aggiornamento: 10 ottobre 2026</span>
       <span class="chip">Contatto: emi.pinto.pn@gmail.com</span>
     </div>
   </div>
@@ -59,6 +59,7 @@
   <article class="clause">
     <h3><span class="n">2.1</span> 🛒 Spesa</h3>
     <p>La schermata iniziale. Si scelgono la lista e il supermercato da usare, poi si tocca "Inizia la spesa" per avviare il percorso. Durante la spesa, una mini-mappa in alto mostra dove ci si trova e quale scaffale raggiungere; i prodotti vengono spuntati come "presi" uno a uno. Se una spesa è già in corso, questa scheda mostra un banner per riprenderla o concluderla; l'icona della scheda cambia per segnalarlo.</p>
+    <p>Se un prodotto è finito nella categoria sbagliata (e quindi nello scaffale sbagliato), si può correggerlo al volo toccando il pulsante <strong>🏷</strong> sulla sua riga: si apre il selettore di categoria e, tornando indietro, il percorso viene ricalcolato. Questa correzione vale solo per la spesa in corso e non modifica il dizionario di classificazione.</p>
   </article>
 
   <article class="clause">
@@ -70,6 +71,7 @@
       <li><strong>📷 Importa da foto:</strong> si scatta una foto o si scegli un'immagine già salvata (es. una lista scritta a mano o fotografata su un foglio) e l'app ne legge il testo per estrarne i prodotti.</li>
     </ul>
     <p>In entrambi i casi i prodotti riconosciuti vengono mostrati in un elenco di revisione, dove si può deselezionare quelli non voluti prima di confermarli: nessun prodotto viene aggiunto automaticamente senza conferma. Queste due funzioni richiedono che sia configurato almeno un motore di <a href="help.html#ai">intelligenza artificiale</a> (sezione 4), perché serve a interpretare la frase pronunciata o il testo letto nella foto.</p>
+    <p>Se la categoria assegnata a un prodotto non è quella giusta, si può cambiarla toccando ⋮ sulla sua riga → <strong>Categoria</strong>: nella schermata che si apre, se è configurato un motore AI, compare anche un pulsante <strong>✨ Suggerisci un'alternativa</strong> che chiede al motore una categoria diversa compatibile col prodotto (si può toccare più volte per ottenere altri suggerimenti). A differenza della correzione fatta durante la spesa (sezione 2.1), una scelta fatta da qui viene anche imparata come regola nel dizionario, così la prossima volta il prodotto verrà classificato subito nel modo corretto.</p>
   </article>
 
   <article class="clause">
@@ -112,7 +114,8 @@
 
   <article class="clause">
     <h3><span class="n">3.3</span> Disporre gli scaffali sulla mappa</h3>
-    <p>Dalla pagina del supermercato tocca <strong>Mappa</strong>. Qui si vede una griglia che rappresenta la pianta del negozio: toccando una cella vuota si piazza lì uno scaffale non ancora posizionato (o si usa "Auto-disponi" per sistemarli tutti in automatico come punto di partenza). Toccando uno scaffale già piazzato compaiono i comandi per <strong>spostarlo</strong>, <strong>ridimensionarlo</strong> o <strong>modificarlo</strong> (rinominarlo, cambiarne le categorie, rimuoverlo dalla mappa). I pulsanti 🔍−/🔍+ regolano lo zoom; Col±/Riga± cambiano le dimensioni della griglia.</p>
+    <p>Dalla pagina del supermercato tocca <strong>Mappa</strong>. Si apre in sola lettura, per evitare di spostare qualcosa per sbaglio mentre la si consulta: tocca <strong>🔒 Modifica</strong> in alto per attivare la modifica (un pulsante <strong>Chiudi</strong> la disattiva di nuovo).</p>
+    <p>In modifica, si vede una griglia che rappresenta la pianta del negozio: toccando una cella vuota si piazza lì uno scaffale non ancora posizionato (o si usa "Auto-disponi" per sistemarli tutti in automatico come punto di partenza). Toccando uno scaffale già piazzato compaiono i comandi per <strong>spostarlo</strong>, <strong>ridimensionarlo</strong> o <strong>modificarlo</strong> (rinominarlo, cambiarne le categorie, rimuoverlo dalla mappa). I pulsanti 🔍−/🔍+ regolano lo zoom (disponibili anche in sola lettura); Col±/Riga± cambiano le dimensioni della griglia.</p>
     <p>Per far calcolare all'app un percorso realistico, posiziona anche i due riferimenti speciali con i pulsanti 🚪 (ingresso) e 💳 (casse) — bastano una volta, nella posizione corretta rispetto agli scaffali.</p>
     <p>La mappa è facoltativa: senza di essa l'app propone comunque un ordine di visita degli scaffali, semplicemente senza disegnare un percorso passo-passo sulla pianta.</p>
   </article>

@@ -39,7 +39,7 @@
     <h1>SpesaFast help</h1>
     <p>How the app is organized, how to set up a supermarket with its shelves, and how to optionally connect an AI engine for automatic product classification.</p>
     <div class="meta">
-      <span class="chip">Last updated: October 5, 2026</span>
+      <span class="chip">Last updated: October 10, 2026</span>
       <span class="chip">Contact: emi.pinto.pn@gmail.com</span>
     </div>
   </div>
@@ -59,6 +59,7 @@
   <article class="clause">
     <h3><span class="n">2.1</span> 🛒 Shopping</h3>
     <p>The home screen. You pick the list and the supermarket to use, then tap "Start shopping" to begin the route. During the trip, a mini-map at the top shows where you are and which shelf to reach next; products are checked off as "picked" one by one. If a trip is already in progress, this tab shows a banner to resume or finish it; the tab's icon changes to flag it.</p>
+    <p>If a product ended up in the wrong category (and therefore the wrong shelf), you can fix it on the spot by tapping the <strong>🏷</strong> button on its row: this opens the category picker, and the route is recalculated when you go back. This correction only applies to the current trip and doesn't change the classification dictionary.</p>
   </article>
 
   <article class="clause">
@@ -70,6 +71,7 @@
       <li><strong>📷 Import from photo:</strong> take a photo or choose an existing image (e.g. a handwritten list or one photographed on a piece of paper), and the app reads its text to extract the products.</li>
     </ul>
     <p>In both cases the recognized products are shown in a review list, where you can deselect the ones you don't want before confirming: nothing is added automatically without confirmation. Both features require at least one <a href="help.html#ai">AI engine</a> (section 4) to be configured, since it's needed to interpret the spoken phrase or the text read from the photo.</p>
+    <p>If a product's category isn't right, you can change it by tapping ⋮ on its row → <strong>Category</strong>: on the screen that opens, if an AI engine is configured, a <strong>✨ Suggest an alternative</strong> button also appears, which asks the engine for a different category that fits the product (you can tap it again for more suggestions). Unlike the correction made during a shopping trip (section 2.1), a choice made here is also learned as a rule in the dictionary, so next time the product will be classified correctly right away.</p>
   </article>
 
   <article class="clause">
@@ -112,7 +114,8 @@
 
   <article class="clause">
     <h3><span class="n">3.3</span> Arrange the shelves on the map</h3>
-    <p>From the supermarket's page, tap <strong>Map</strong>. Here you see a grid representing the store's floor plan: tapping an empty cell places an unplaced shelf there (or use "Auto-arrange" to place them all automatically as a starting point). Tapping an already-placed shelf shows the commands to <strong>move</strong>, <strong>resize</strong> or <strong>edit</strong> it (rename it, change its categories, remove it from the map). The 🔍−/🔍+ buttons control zoom; Col±/Row± change the grid size.</p>
+    <p>From the supermarket's page, tap <strong>Map</strong>. It opens read-only, to avoid accidentally moving something while you're just looking at it: tap <strong>🔒 Edit</strong> at the top to turn editing on (a <strong>Close</strong> button turns it off again).</p>
+    <p>In edit mode, you see a grid representing the store's floor plan: tapping an empty cell places an unplaced shelf there (or use "Auto-arrange" to place them all automatically as a starting point). Tapping an already-placed shelf shows the commands to <strong>move</strong>, <strong>resize</strong> or <strong>edit</strong> it (rename it, change its categories, remove it from the map). The 🔍−/🔍+ buttons control zoom (also available read-only); Col±/Row± change the grid size.</p>
     <p>For the app to compute a realistic route, also place the two special markers using the 🚪 (entrance) and 💳 (checkout) buttons — once is enough, in the correct position relative to the shelves.</p>
     <p>The map is optional: without it the app still proposes an order to visit the shelves, it just won't draw a step-by-step route on the floor plan.</p>
   </article>
